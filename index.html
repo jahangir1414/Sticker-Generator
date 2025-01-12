@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ENAM MEDICAL COLLEGE & HOSPITAL</h1>
+        <h2>Department of Radiation Oncology</h2>
+        <form id="stickerForm">
+            <div class="input-field radiationID">
+                <label for="radiationId">Radiation Oncology ID:</label>
+                <input type="text" id="radiationId" name="radiationId"
+                placeholder="Enter RT Number" required>
+            </div>
+
+            <div class="input-field">
+                <label for="patientId">Patient ID:</label>
+                <input type="text" id="patientId" name="patientId" 
+                placeholder="Enter Patient ID" required>
+            </div>
+
+            <div class="input-field">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName"
+                placeholder="Enter Patient Name" required>
+            </div>
+
+            <div class="input-field">
+                <label for="diagnosis">Diagnosis:</label>
+                <input type="text" id="diagnosis" name="diagnosis" required
+                placeholder="Enter Patient Diagnosis">
+            </div>
+
+            <div class="input-field">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required> Yrs
+            
+                
+            </div>
+
+            <div class="input-field">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="Please select">Please Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                
+            </div>
+
+            <div class="input-field">
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" required
+                placeholder="Enter Patient Phone Number">
+                
+            </div>
+
+            <div class="input-field">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="input-field">
+                <label for="consultantName">Consultant's Name:</label>
+                <select id="consultantName" name="consultantName" required>
+                    <option value="Please select">Please Select</option>
+                    <option value="Prof. Dr. Md Yeaqub Ali [6981]">Prof. Dr. Md Yeaqub Ali [6981]</option>
+                    <option value="Assoc. Prof. Dr. Mahfujul Ahmed Riad [21830]">Assoc. Prof. Dr. Mahfujul Ahmed
+                        Riad [21830]</option>
+                    <option value="Asst. Prof. Dr. Md Mukitul Huda [21888]">Asst. Prof. Dr. Md Mukitul Huda [21888]
+                    </option>
+                    <option value="Asst. Prof. Dr. Afroja Begum Tania [22618]">Asst. Prof. Dr. Afroja Begum Tania [22618]
+                    </option>
+                    <option value="Dr. Rubina Sultana [23646]">Dr. Rubina Sultana [23646]</option>
+                    <option value="Dr. Md Shaiful Hassan Shameem [21667]">Dr. Md Shaiful Hassan Shameem [21667]</option>
+                    <option value="Dr. Shuvra Debnath [21639]">Dr. Shuvra Debnath [21639]</option>
+                    <option value="Dr. Abdullah-Al-Noman Pavel [21685]">Dr. Abdullah-Al-Noman Pavel [21685]</option>
+                    <option value="Asst.Prof. Dr. S.M Nazmul Alam [23400]">Dr. S. M Nazmul Alam [23400]</option>
+                    <option value="Dr. Abdul Mannan [21727]">Dr. Abdul Mannan [21727]</option>
+                    <option value="Dr. Muhammad Masudul Hasan Arup [23500]">Dr. Muhammad Masudul Hasan Arup [23500]
+                    </option>
+                    <option value="Dr. Tania Sultana [23659]">Dr. Tania Sultana [23659]</option>
+                    <option value="Dr. Muhammad Ashraf-Us-Zaman Mahnud [23472]">Dr. Muhammad Ashraf-Us-Zaman Mahnud [23472]</option>
+                    <option value="Dr. Mizanur Rahman [22913]">Dr. Mizanur Rahman [22913]</option>
+                    <option value="Dr. Saiful Alam [23694]">Dr. Saiful Alam [23694]</option>
+                    <option value="Dr. Tasneem Hossain [23693]">Dr. Tasneem Hossain [23693]</option>
+                    <option value="Asst. Prof. Dr. Sajib Kumar Talukdhar [23711]">Asst. Prof. Dr. Sajib Kumar
+                        Talukdhar [23711]</option>
+                    <option value="Dr. Nowshin Taslima Hossain">Dr. Nowshin Taslima Hossain</option>
+                    <option value="Dr. Md. Shariful Islam (Johnny) [23687]">Dr. Md. Shariful Islam (Johnny) [23687]</option>
+                    <option value="Dr. Sharmin Billah[23814]">Dr. Sharmin Billah[23814]</option>
+                    <option Value="Dr. Rezwanul Quader [23875]">Dr. Rezwanul Quader [23875]</option>
+                    <option Value="Dr. Md. Rahmat Ullah [21763]">Dr. Md. Rahmat Ullah [21763]</option>
+                    <option value="Dr Md. Saidul Haque [23914]">Dr Md. Saidul Haque [23914]</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <label for="treatmentTechnique">Treatment Technique:</label>
+                <select id="treatmentTechnique" name="treatmentTechnique" required>
+                    <option value="Please select">Please Select</option>
+                    <option value="3DCRT[0104]">3DCRT[0104]</option>
+                    <option value="IMRT[0106]">IMRT[0106]</option>
+                    <option value="VMAT[0110]">VMAT[0110]</option>
+                    <option value="3DCRT-M[0121]">3DCRT-M[0121]</option>
+                    <option value="IMRT-M[0122]">IMRT-M[0122]</option>
+                    <option value="VMAT-M[0123]">VMAT-M[0123]</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="generateInfoCard()">Info Card</button>
+                <button type="button" onclick="generateFileLabel()">File Label</button>
+                <button type="button" onclick="generateBagSticker()">Bag Sticker</button>
+            </div>
+        </form>
+
+        <div id="barcodeContainer">
+            <canvas id="barcode"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script>
+        function generateBarcode(patientId) {
+            const canvas = document.getElementById('barcode');
+            JsBarcode(canvas, patientId, {
+                format: "CODE128",
+                width: 2,
+                height: 50,
+                displayValue: true
+            });
+            return canvas.toDataURL('image/png');
+        }
+
+        function generateInfoCard() {
+            const { jsPDF } = window.jspdf;
+
+            // Get form values
+            const radiationId = document.getElementById("radiationId").value;
+            const patientId = document.getElementById("patientId").value;
+            const patientName = document.getElementById("patientName").value.toUpperCase();
+            const diagnosis = document.getElementById("diagnosis").value;
+            const age = document.getElementById("age").value;
+            const sex = document.getElementById("sex").value;
+            const phone = document.getElementById("phone").value;
+            const address = document.getElementById("address").value.toUpperCase();
+            const consultantName = document.getElementById("consultantName").value;
+            const treatmentTechnique = document.getElementById("treatmentTechnique").value;
+
+            // Create a new jsPDF instance
+            const doc = new jsPDF({
+                orientation: 'landscape',
+                unit: 'in',
+                format: [4, 2]
+            });
+
+            // Generate barcode
+            const barcodeDataUrl = generateBarcode(patientId);
+
+        
+
+            // add Radiation Oncology ID (font: bold, size 12)
+            doc.setFontSize(11)
+            doc.setFont("Arial", "bold")
+            doc.text("Radiation Oncology ID:", 0.1, 0.25);
+
+            doc.setFontSize(15);
+            doc.setFont("helvetica", "bold");
+            doc.text(radiationId, 1.7, 0.25);
+
+            // Add Patient ID (font: regular, size 10)
+            doc.setFontSize(10);
+            doc.setFont("arial", "normal");
+            doc.text("Patient ID:", 0.1, 0.45);
+
+            doc.setFontSize(11)
+            doc.setFont("helvetica", "bold")
+            doc.text(patientId, 0.75, 0.45);
+
+            // Add Patient Name (font: bold, size 11)
+            doc.setFontSize(10);
+            doc.setFont("arial", "normal");
+            doc.text("Patient Name:", 0.1, 0.6)
+
+            doc.setFontSize(11)
+            doc.setFont("helvetica", "bold")
+            doc.text(patientName, 0.95, 0.6);
+
+            // Add Diagnosis (font: regular, size 11)
+            doc.setFontSize(10);
+            doc.setFont("arial", "normal");
+            doc.text("Diagnosis:", 0.1, 0.75)
+
+            doc.setFontSize(11)
+            doc.setFont("arial", "normal")
+            doc.text(diagnosis, 0.75, 0.75);
+
+            // Add Age, Sex, Phone (font: regular, size 11)
+            doc.setFontSize(10)
+            doc.setFont("arial", "normal")
+            doc.text("Age:", 0.1, 0.9)
+
+            doc.setFontSize(11)
+            doc.setFont("arial", "normal")
+            doc.text(age + "Yrs", 0.4, 0.9)
+
+            doc.setFontSize(10)
+            doc.setFont("arial", "normal")
+            doc.text("Gender:", 1.1, 0.9)
+
+            doc.setFontSize(11)
+            doc.setFont("arial","normal")
+            doc.text(sex, 1.57, 0.9)
+
+            doc.setFontSize(10)
+            doc.setFont("arial", "normal")
+            doc.text("Phone:", 2.33, 0.9)
+
+            doc.setFontSize(11)
+            doc.setFont("arial", "bold")
+            doc.text("+88" + phone, 2.74, 0.9)
+        
+            //Add Address
+            doc.setFontSize(10)
+            doc.setFont("arial", "normal")
+            doc.text("Address:", 0.1, 1.05)
+
+            doc.setFontSize(8)
+            doc.setFont("helvetica", "uppercase")
+            doc.text(address, 0.6, 1.05)
+
+            // Add Consultant's Name (font: bold, size 11)
+            doc.setFontSize(10)
+            doc.setFont("arial", "normal")
+            doc.text("Consultant Name:", 0.1, 1.20)
+
+            doc.setFontSize(10)
+            doc.setFont("arial", "bold")
+            doc.text(consultantName, 1.12, 1.20);
+
+            // Add Treatment Technique (font: bold, white on black background)
+            doc.setFillColor(0, 0, 0); // Black fill
+            doc.rect(2.85, 0.01, 1.2, 0.4, 'F'); // Box for treatment technique
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(12);
+            doc.setTextColor(255, 255, 255); // White text color
+            doc.text(treatmentTechnique.split('\n'), 2.9, 0.3);
+
+
+            // Add barcode
+            doc.addImage(barcodeDataUrl, 'PNG', 0.9, 1.25, 2.2, 0.75);
+
+            // Open PDF in new tab
+            window.open(doc.output('bloburl'));
+        }
+
+        function generateFileLabel() {
+            const { jsPDF } = window.jspdf;
+
+            // Get form values
+            const radiationId = document.getElementById("radiationId").value;
+            const patientId = document.getElementById("patientId").value;
+            const patientName = document.getElementById("patientName").value;
+            const consultantName = document.getElementById("consultantName").value;
+            const age = document.getElementById("age").value;
+            const address = document.getElementById("address").value
+
+            // Create a new jsPDF instance
+            const doc = new jsPDF({
+                orientation: 'landscape',
+                unit: 'in',
+                format: [4, 2]
+            });
+
+
+            // Add Patient Name
+            doc.setFontSize(20)
+            doc.setFont("helvetica", "bold")
+            doc.text(patientName +"/" + age + "Y", 0.15, 0.3)
+
+            // Add Radiation ID
+            doc.setFontSize(20)
+            doc.setFont("helvetica", "bold")
+            doc.text("RT No: " + radiationId, 0.15, 0.58)
+
+            //Add comsultant Name
+            doc.setFontSize(15)
+            doc.setFont("helvetica", "normal")
+            doc.text(consultantName.split('[')[0], 0.15, 0.78)
+
+            //Add Address
+            doc.setFontSize(10)
+            doc.setFont("helviteca", "normal")
+            doc.text("Address: " +address, 0.15, 0.93)
+            
+            // Add barcode
+           
+
+            // Open PDF in new tab
+            window.open(doc.output('bloburl'));
+        }
+
+        function generateBagSticker() {
+            const { jsPDF } = window.jspdf;
+
+            // Get form values
+            const radiationId = document.getElementById("radiationId").value;
+            const consultantName = document.getElementById("consultantName").value;
+            const patientName = document.getElementById("patientName").value.toUpperCase();
+
+            // Create a new jsPDF instance
+            const doc = new jsPDF({
+                orientation: 'landscape',
+                unit: 'in',
+                format: [4, 2]
+                
+            });
+
+        
+
+            // Set font and add content
+            doc.setFontSize(25)
+            doc.setFont("helvetica", "bold")
+            doc.text("RT No: " + radiationId, 0.1, 0.4)
+           
+            //Add Patient Name
+            doc.setFontSize(21)
+            doc.setFont("helvetica", "normal")
+            doc.text("Name: " +patientName, 0.1, 0.68)
+
+            //Add consultant Name
+            doc.setFontSize(16)
+            doc.setFont("helvetica", "normal")
+            doc.text(consultantName.split('[')[0], 0.1, 0.93)
+
+            //Add Aditional Text
+            doc.setFontSize(14)
+            doc.setFont("helvetica", "bold")
+            doc.text("Department of Radiation Oncology", 0.4, 1.6)
+
+            doc.setFontSize(14)
+            doc.setFont("helvetica", "normal")
+            doc.text("ENAM MEDICAL COLLEGE & HOSPITAL", 0.2, 1.8)
+            
+
+
+
+            // Open PDF in new tab
+            window.open(doc.output('bloburl'));
+        }
+    </script>
+    
+<footer>
+    <hr>
+    Copyright:<br>
+</footer>
+</body>
+
+</html>
