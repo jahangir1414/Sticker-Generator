@@ -49,7 +49,7 @@ form input:focus {
 }
 ::placeholder {
     color: #777;
-    font-size: 1.rem;
+    font-size: 1rem;
 
 button {
     padding: 10px 15px;
