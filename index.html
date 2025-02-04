@@ -46,7 +46,7 @@
         }
 
         .promo-section h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             font-weight: 700;
         }
@@ -365,14 +365,33 @@
             doc.setFontSize(10)
             doc.setFont("arial", "bold")
             doc.text(consultantName, 1.12, 1.20);
-
+           
             // Add Treatment Technique (font: bold, white on black background)
-            doc.setFillColor(0, 0, 0); // Black fill
-            doc.rect(2.85, 0.01, 1.2, 0.4, 'F'); // Box for treatment technique
-            doc.setFont("helvetica", "bold");
-            doc.setFontSize(11);
-            doc.setTextColor(255, 255, 255); // White text color
-            doc.text(treatmentTechnique.split('\n'), 2.9, 0.3);
+doc.setFillColor(0, 0, 0); // Black fill
+doc.rect(2.85, 0.01, 1.2, 0.4, 'F'); // Box for treatment technique
+doc.setFont("helvetica", "bold");
+doc.setFontSize(12);
+doc.setTextColor(255, 255, 255); // White text color
+
+
+
+// Split the treatmentTechnique into text and code
+const regex = /^(.*?)(\[.*\])$/; // Regex to capture text and code
+const matches = treatmentTechnique.match(regex);
+
+let firstLine = treatmentTechnique; // Default to full text if no match
+let secondLine = "";
+
+if (matches) {
+  firstLine = matches[1].trim(); // Text part (e.g., "3DCRT")
+  secondLine = matches[2].trim(); // Code part (e.g., "[0104-1]")
+}
+
+// Add the first line (text part) at the specified coordinates
+doc.text(firstLine, 3.2, 0.15); // First line at (2.9, 0.15)
+
+// Add the second line (code part) at the specified coordinates
+doc.text(secondLine, 3.1, 0.3); // Second line at (2.9, 0.3)
 
 
             // Add barcode
